@@ -1,0 +1,11 @@
+remote_theme: PaulSt/eleven
+theme: eleven-theme
+
+eleven:
+  date_format: "%b %d, %Y"
+  logo:  "assets/logo.png" 
+
+permalink: post/:title
+
+title: "eleven"
+description: "simple & clean jekyll theme"

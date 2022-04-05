@@ -1,0 +1,67 @@
+html, body { background: white; }
+
+html { height: 100%; }
+
+$fontsize: 12px;
+
+body {
+    color: black;
+    font-family: monospace;
+    font-size: $fontsize;
+    line-height: 1;
+    margin: 0;
+    min-height: 100%;
+    overflow-wrap: break-word;
+}
+
+.post-meta { text-align: right; }
+
+h1 {
+    margin: 0px;
+}
+
+h2, h3, h4, h5, h6 { 
+    font-size: $fontsize;
+    margin: 0;
+}
+
+li { margin: 0.1rem 0; }
+
+.w {
+    max-width: 512px;
+    height: auto;
+    margin: 1em auto;
+}
+
+.box {
+    @extend .w;
+    padding: 1em;
+    border: 1px solid black;
+}
+
+code {
+    color: black;
+    background: lightgray;
+}
+
+div.highlighter-rouge code {
+    display: block;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    padding: 1rem;
+}
+
+#carousel img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em;
+}
+
+img.rounded {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 80px;
+    width:  80px;
+}
