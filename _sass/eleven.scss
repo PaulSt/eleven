@@ -65,3 +65,18 @@ img.rounded {
     height: 80px;
     width:  80px;
 }
+
+$link-color: #4478A6;
+$hover-color: darken($link-color, 20%);
+a{
+  color: $link-color;
+  text-decoration: none;
+  
+  &:hover{
+    color: $hover-color;
+    border-bottom: 1px solid $hover-color;
+  }
+  
+  &:visited{
+  }
+}
