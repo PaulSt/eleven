@@ -18,6 +18,12 @@ layout: default
         {{ page.content | markdownify }}
     </div>
     {% endif %}
+    {% if page.layout == 'prev' and page.content contains site.excerpt_separator %}
+    <div class="box">
+        {{ page.excerpt }}
+        <p><a href="{{ page.url | relative_url }}">Read more</a></p>
+    </div>
+    {% endif %}
     {% endfor %}
 
     {%- assign date_format = site.eleven.date_format | default: "%b %d, %Y" -%}

@@ -9,3 +9,5 @@ permalink: post/:title
 
 title: "eleven"
 description: "simple & clean jekyll theme"
+excerpt_separator: <!--more-->
+page_excerpts: true
