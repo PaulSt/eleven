@@ -16,8 +16,13 @@ jobs:
     - uses: actions/checkout@v2
     - run: gem build 
 
-  #publish:
-    #needs: [ubuntu,macos]
-    #runs-on: ubuntu-latest
-    #if: github.event_name == 'release' && github.event.action == 'created' 
-    #steps:
+  publish:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'release' && github.event.action == 'created' 
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build and publish gem
+      uses: jstastny/publish-gem-to-github@master
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        owner: PaulSt
