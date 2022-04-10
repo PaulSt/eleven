@@ -1,9 +1,11 @@
 # eleven
-a very simple, clean & customizable jekyll theme
-The theme is inspired by [no-style-please](https://github.com/riggraz/no-style-please) and [elly.town](https://elly.town/).
+a very simple, clean & customizable jekyll theme.
+
+Take a look at the [demo website](https://paulst.github.io/eleven/). The theme is inspired by [no-style-please](https://github.com/riggraz/no-style-please) and [elly.town](https://elly.town/).
 
 ## Installation
 
+### Local installation
 Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
@@ -23,10 +25,17 @@ And then execute:
 Or install it yourself as:
 
     $ gem install eleven-theme
+    
+Run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using the theme.
 
-## Usage
+### Deploying with github-pages
+To get the best out of this template jekyll v4.2 is required. Since github pages runs on Jekyll 3, the easiest way is to use github actions to deploy the site. 
+Instructions can be found [here](https://jekyllrb.com/docs/continuous-integration/github-actions/). 
+Also the github-pages part of the github actions [here](https://github.com/PaulSt/eleven/blob/main/.github/workflows/ci.yml) can simply be reused.
 
-So far there are layouts for 
+## Layouts
+
+Check iut the [demo website](https://paulst.github.io/eleven/) to see the different layouts. So far there are layouts for 
 * home - should be used in for the index.md
 * block - used to show content directly in the home layout in a seperate block
 * post - used to create posts, which will be listed in the home layout.
@@ -34,15 +43,6 @@ So far there are layouts for
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/PaulSt/eleven. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
-## Development
-
-To set up your environment to develop this theme, run `bundle install`.
-
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `eleven.gemspec` accordingly.
 
 ## License
 
