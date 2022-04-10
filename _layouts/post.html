@@ -4,9 +4,9 @@ layout: default
 
 <main class="page-content" aria-label="Content">
 <div class="w">
-<a href="{{ page.previous.url }}">&lt;</a>
-<a href="\">^</a>
-<a href="{{ page.next.url }}">&gt;</a>
+<a href="{{ page.previous.url  | relative_url }}">&lt;</a>
+<a href="{{ '/' | relative_url }}">^</a>
+<a href="{{ page.next.url  | relative_url }}">&gt;</a>
 </div>
 
 <div class="box">
