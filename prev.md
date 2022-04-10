@@ -1,14 +1,19 @@
 ---
-layout: prev
-title: Lorem
+layout: block
+title: Previews
 ---
 
-Lorem prev
+Previews
 ------------
 
-Lorem markdownum solidas armis diu quoque, et sororia, aderat caeli certa
-fulmina tristis sparsisque **usus**, gravitate verus. An longoque futura, vitam
-vidi cernis, inde meorum adsuetus, novissima putes *gelidaeque murmur*; haec.
+You can also only previews content of blocks by using `<!--more->`
+and using the following setting your `_config.yml`:
+
+```
+excerpt_separator: <!--more->
+page_excerpts: true
+```
+
 <!--more-->
 
 [Magis aestus](http://www.ora-aevum.com/vino), qua vocatus augur. Utque Cadmeida

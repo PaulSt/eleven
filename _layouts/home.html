@@ -14,11 +14,13 @@ layout: default
 
     {% for page in site.pages %}
     {% if page.layout == 'block' %}
+    {% unless page.content contains site.excerpt_separator %}
     <div class="box">
         {{ page.content | markdownify }}
     </div>
+    {% endunless %}
     {% endif %}
-    {% if page.layout == 'prev' and page.content contains site.excerpt_separator %}
+    {% if page.layout == 'block' and page.content contains site.excerpt_separator %}
     <div class="box">
         {{ page.excerpt }}
         <p><a href="{{ page.url | relative_url }}">Read more</a></p>
