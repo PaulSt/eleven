@@ -17,16 +17,15 @@ jobs:
       with: 
         fetch-depth: 0
     - run: gem build 
-
-  publish:
-    runs-on: ubuntu-latest
-    if: github.event_name == 'release' && github.event.action == 'created' 
-    steps:
-    - uses: actions/checkout@v2
-      with: 
-        fetch-depth: 0
-    - name: Build and publish gem
-      uses: jstastny/publish-gem-to-github@master
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        owner: PaulSt
+    - name: setup credentials 
+      if: github.event_name == 'release' && github.event.action == 'created' 
+      run: |
+          mkdir -p ~/.gem
+          cat << EOF > ~/.gem/credentials
+          ---
+          :github: Bearer ${{ secrets.GITHUB_TOKEN }}
+          :rubygems_api_key: ${{ secrets.RUBY }}
+          EOF
+          chmod 0600 ~/.gem/credentials
+    - run: gem push *.gem 
+      if: github.event_name == 'release' && github.event.action == 'created' 
