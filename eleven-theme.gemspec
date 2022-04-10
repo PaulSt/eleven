@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "eleven-theme"
-  spec.version       = "0.1.0"
+  spec.version       = `git describe --tags --abbrev=0`[1..-1]
   spec.authors       = ["Paul"]
   spec.email         = ["stocker.paul@hotmail.com"]
 
