@@ -51,15 +51,24 @@ div.highlighter-rouge code {
     padding: 1rem;
 }
 
-#carousel img {
-    width: 100%;
+
+img {
     height: auto;
+    max-width: 512px * 0.5;
     display: block;
-    margin: 0 auto;
-    padding: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-img.rounded {
+em > img { 
+    max-width: 512px;
+}
+
+strong > img {
+    border-radius: 8px;
+}
+
+img.logo {
     object-fit: cover;
     border-radius: 50%;
     height: 80px;
@@ -69,14 +78,14 @@ img.rounded {
 $link-color: #4478A6;
 $hover-color: darken($link-color, 20%);
 a{
-  color: $link-color;
-  text-decoration: none;
-  
-  &:hover{
-    color: $hover-color;
-    border-bottom: 1px solid $hover-color;
-  }
-  
-  &:visited{
-  }
+    color: $link-color;
+    text-decoration: none;
+
+    &:hover{
+        color: $hover-color;
+        border-bottom: 1px solid $hover-color;
+    }
+
+    &:visited{
+    }
 }
