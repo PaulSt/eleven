@@ -28,6 +28,19 @@ layout: default
     {% endif %}
     {% endfor %}
 
+    {% for collection in site.collections %}
+    {% unless collection.label == 'posts' %}
+        <div class="box">
+            <h2>{{ collection.label }}</h2>
+            <ul>
+            {% for entry in site[collection.label] %}
+                <li><a href="{{ entry.url  | relative_url }}">{{ entry.title }}</a></li>
+            {% endfor %}
+            </ul>
+        </div>
+    {% endunless %}
+    {% endfor %}
+
     {%- assign date_format = site.eleven.date_format | default: "%b %d, %Y" -%}
     <div class="box">
         <h2>Posts</h2>

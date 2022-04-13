@@ -40,7 +40,6 @@ li { margin: 0.15rem 0; }
 }
 
 code {
-    color: black;
     background: lightgray;
 }
 
@@ -56,16 +55,17 @@ img {
     height: auto;
     max-width: 512px * 0.5;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 em > img { 
-    max-width: 512px;
+    max-width: 512px * 0.40;
+    display: inline;
+    margin: 0 512px*0.046;
 }
 
 strong > img {
-    border-radius: 8px;
+    max-width: 512px;
 }
 
 img.logo {

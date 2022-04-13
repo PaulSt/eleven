@@ -12,5 +12,9 @@ description: "simple & clean jekyll theme"
 excerpt_separator: <!--more-->
 page_excerpts: true
 
+collections:
+  collectionName:
+    output: true
+
 # for github subpage
 baseurl: /eleven
