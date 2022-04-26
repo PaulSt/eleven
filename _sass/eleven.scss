@@ -52,7 +52,6 @@ div.highlighter-rouge code {
     padding: 1rem;
 }
 
-
 img {
     height: auto;
     max-width: 512px * 0.5;
@@ -60,14 +59,19 @@ img {
     margin: 0 auto;
 }
 
-em > img { 
-    max-width: 512px * 0.40;
+h2 > img { 
+    max-width: 512px * 0.465;
+    max-height: 512px * 0.5;
+    object-fit: cover;
     display: inline;
-    margin: 0 512px*0.046;
+    padding: 0 0 0 512px*0.05;
+    box-sizing: border-box;
 }
 
-strong > img {
+h1 > img {
     max-width: 512px;
+    padding: 0 512px*0.05;
+    box-sizing: border-box;
 }
 
 img.logo {
@@ -75,6 +79,14 @@ img.logo {
     border-radius: 50%;
     height: 80px;
     width:  80px;
+}
+
+img + em { 
+    font-size: $fontsize;
+    text-align: center;
+    display: block;
+    margin: 0.5em auto;
+    font-weight: normal;
 }
 
 $link-color: #4478A6;
