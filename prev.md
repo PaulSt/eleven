@@ -3,10 +3,7 @@ layout: block
 title: Previews
 ---
 
-Previews
-------------
-
-You can also only previews content of blocks by using `<!--more->`
+You can also only preview content of blocks by using `<!--more->`
 and using the following setting your `_config.yml`:
 
 ```

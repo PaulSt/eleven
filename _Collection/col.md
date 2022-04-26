@@ -1,12 +1,9 @@
 ---
 layout: block
-title: Collections
+title: How to create collections
 ---
 
-Part of a collection
-------------
-
-This is part of a collection
+This file is part of a collection.
 Use 
 ```
 collections:

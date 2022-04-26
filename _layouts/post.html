@@ -4,9 +4,14 @@ layout: default
 
 <main class="page-content" aria-label="Content">
 <div class="w">
+{% if page.previous.url %}
 <a href="{{ page.previous.url  | relative_url }}">&lt;</a>
+{% else %} &nbsp;
+{% endif %}
 <a href="{{ '/' | relative_url }}">^</a>
+{% if page.next.url %}
 <a href="{{ page.next.url  | relative_url }}">&gt;</a>
+{% endif %}
 </div>
 
 <div class="box">
