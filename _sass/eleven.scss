@@ -28,6 +28,13 @@ li { margin: 0.15rem 0; }
     margin: 1em auto;
 }
 
+@media (max-width: 800px) {
+  #container {
+    padding: 0;
+    margin: 0;
+  }
+}
+
 .box {
     @extend .w;
     padding: 1em;
