@@ -13,7 +13,7 @@ excerpt_separator: <!--more-->
 page_excerpts: true
 
 collections:
-  collectionName:
+  Collection:
     output: true
 
 # for github subpage
