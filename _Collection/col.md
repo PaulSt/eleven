@@ -1,5 +1,5 @@
 ---
-layout: block
+layout: post
 title: How to create collections
 ---
 

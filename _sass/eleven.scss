@@ -80,9 +80,10 @@ h1 > img {
 img.logo {
     height: 15%;
     width:  15%;
-    display: inline;
     object-fit: cover;
     border-radius: 50%;
+    float: left;
+    margin: 0 1em 0 0;
 }
 
 img + em { 
