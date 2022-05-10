@@ -18,7 +18,7 @@ body {
 .post-meta { text-align: right; }
 
 h1{ 
-    margin: 0px;
+    margin: 0;
 }
 
 li { margin: 0.15rem 0; }
@@ -43,6 +43,12 @@ li { margin: 0.15rem 0; }
 
 code {
     background: lightgray;
+}
+
+table{
+    margin-left: auto; 
+    margin-right: auto;
+    border-spacing: .5em 0;
 }
 
 div.highlighter-rouge code {
@@ -109,8 +115,3 @@ a{
     }
 }
 
-table{
-    margin-left:auto; 
-    margin-right:auto;
-    border-spacing: 5px 0;
-}
