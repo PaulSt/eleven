@@ -30,7 +30,11 @@ layout: default
     {% for collection in site.collections %}
     {% unless collection.label == 'posts' %}
         <div class="box">
+            {% if collection.title %}
+            <h3>{{ collection.title }}</h3>
+            {% else %}
             <h3>{{ collection.label }}</h3>
+            {% endif %}
             <ul>
             {% for entry in site[collection.label] %}
                 <li><a href="{{ entry.url  | relative_url }}">{{ entry.title }}</a></li>

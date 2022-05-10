@@ -13,8 +13,9 @@ excerpt_separator: <!--more-->
 page_excerpts: true
 
 collections:
-  Collection:
+  examplecollection:
     output: true
+    title: "Collections"
 
 # for github subpage
 baseurl: /eleven
