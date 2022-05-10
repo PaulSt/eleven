@@ -100,6 +100,15 @@ img + em {
     font-weight: normal;
 }
 
+
+iframe {
+    height: auto;
+    max-width: 100%;
+    padding: 0 5%;
+    display: block;
+    margin: 0 auto;
+}
+
 $link-color: #4478A6;
 $hover-color: darken($link-color, 20%);
 a{
