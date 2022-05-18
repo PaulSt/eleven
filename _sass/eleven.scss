@@ -27,8 +27,7 @@ code {
 }
 
 table{
-    margin-left: auto; 
-    margin-right: auto;
+    margin: 1em auto;
     border-spacing: .5em 0;
 }
 
@@ -36,7 +35,7 @@ div.highlighter-rouge code {
     display: block;
     overflow-x: auto;
     white-space: pre-wrap;
-    padding: 1rem;
+    padding: 1em;
 }
 
 img {
@@ -52,7 +51,7 @@ h2 > img {
     max-width: 46.5%;
     max-height: 50%;
     object-fit: cover;
-    display: inline;
+    display: inline-block;
     padding: 0 0 0 5%;
     box-sizing: border-box;
 }
@@ -60,6 +59,7 @@ h2 > img {
 h1 > img {
     max-width: 100%;
     padding: 0 5%;
+    display: block;
     box-sizing: border-box;
 }
 
@@ -74,7 +74,7 @@ img.logo {
 }
 
 img + em { 
-    font-size: $fontsize;
+    font-size: 0.8rem;
     text-align: center;
     display: block;
     margin: 0.5em auto;
