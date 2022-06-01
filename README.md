@@ -35,7 +35,7 @@ Also the github-pages part of the github actions [here](https://github.com/PaulS
 
 ## Layouts
 
-Check iut the [demo website](https://paulst.github.io/eleven/) to see the different layouts. So far there are layouts for 
+Check out the [demo website](https://paulst.github.io/eleven/) to see the different layouts. So far there are layouts for 
 * home - should be used in for the index.md
 * block - used to show content directly in the home layout in a seperate block
 * post - used to create posts, which will be listed in the home layout.
