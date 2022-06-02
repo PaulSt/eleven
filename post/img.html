@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Inserting images</title>
+    <link rel="stylesheet" href="/eleven/assets/css/main.css" />
+    <link rel="shortcut icon" href="/eleven/assets/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <main class="page-content" aria-label="Content">
+<div class="w">
+
+<a href="/eleven/post/tables">&lt;</a>
+
+<a href="/eleven/">^</a>
+
+<a href="/eleven/post/website">&gt;</a>
+
+</div>
+
+<div class="box">
+<h1>Inserting images</h1>
+    <p>One can insert images with captions using</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![test](path/to/img) *Caption*
+</code></pre></div></div>
+<p>in markdown. Note that there is no line break before the caption</p>
+
+<p><img src="/eleven/assets/test.png" alt="test" /> <em>Caption</em></p>
+
+<p>By using images with header definitions one can alter the appearance.</p>
+
+<p>Using an h1 header the image will be maximized</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># ![img](path/to/img) *Caption*
+</code></pre></div></div>
+<h1 id="-caption"><img src="/eleven/assets/test.png" alt="test" /> <em>Caption</em></h1>
+
+<p>Using an h2 header two images can be put next to each other and will be squared up</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## ![img1](path/to/img) ![img2](path/to/img2) *Caption*
+</code></pre></div></div>
+<h2 id="--caption"><img src="/eleven/assets/test.png" alt="test" /> <img src="/eleven/assets/test.png" alt="test" /> <em>Caption</em></h2>
+
+
+</div>
+</main>
+
+</html>
