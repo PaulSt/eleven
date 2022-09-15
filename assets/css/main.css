@@ -1,0 +1,47 @@
+html, body { background: white; }
+
+body { max-width: 42em; margin: auto; font-family: monospace; line-height: 1.1; }
+
+.post-meta { text-align: right; }
+
+li { margin: 0.15em 0; }
+
+.w, .box { height: auto; margin: 1em auto; }
+
+.box { padding: 0em 1em; border: 1px solid black; }
+
+h1 { font-size: 1.3em; }
+
+h2 { font-size: 1.1em; }
+
+h3 { font-size: 1em; text-decoration: underline; font-weight: normal; }
+
+h4 { font-size: 1em; text-decoration: underline; font-weight: normal; }
+
+h5 { font-size: 1em; text-decoration: underline; font-weight: normal; }
+
+h6 { font-size: 1em; text-decoration: underline; font-weight: normal; }
+
+code { background: lightgray; }
+
+table { margin: 1em auto; border-spacing: .5em 0; }
+
+div.highlighter-rouge code { display: block; overflow-x: auto; white-space: pre-wrap; padding: 1em; }
+
+img { height: auto; max-width: 50%; display: block; margin: 0 auto; object-fit: scale-down; width: 100%; }
+
+h2 > img { max-width: 46.5%; max-height: 50%; object-fit: cover; display: inline-block; padding: 0 0 0 5%; box-sizing: border-box; }
+
+h1 > img { max-width: 100%; padding: 0 5%; display: block; box-sizing: border-box; }
+
+img.logo { height: 7em; width: 7em; object-fit: cover; border-radius: 50%; float: left; margin: 0 1em 0 0; }
+
+img + em { font-size: 0.8rem; text-align: center; display: block; margin: 0.5em auto; font-weight: normal; }
+
+iframe { height: auto; max-width: 100%; padding: 0 5%; display: block; margin: 0 auto; }
+
+a { color: #4478A6; text-decoration: none; }
+
+a:hover { color: #26445e; border-bottom: 1px solid #26445e; }
+
+/*# sourceMappingURL=main.css.map */

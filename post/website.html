@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>How to use this template</title>
+    <link rel="stylesheet" href="/eleven/assets/css/main.css" />
+    <link rel="shortcut icon" href="/eleven/assets/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <main class="page-content" aria-label="Content">
+<div class="w">
+
+<a href="/eleven/post/img">&lt;</a>
+
+<a href="/eleven/">^</a>
+
+</div>
+
+<div class="box">
+<h1>How to use this template</h1>
+    <p>With Ruby installed one can run the following to install bundler and jekyll</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gem <span class="nb">install </span>jekyll bundler
+</code></pre></div></div>
+
+<p>Create a Gemfile (called Gemfile) with the contents</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source "https://rubygems.org"
+gem "eleven-theme"
+gem "webrick"
+</code></pre></div></div>
+<p>and a config called _config.yml with the contents</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>remote_theme: PaulSt/eleven
+theme: eleven
+</code></pre></div></div>
+
+<p>And optionally we can already put a landing page inside, written in markdown, called index.md</p>
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: home
+---
+Hello World!
+</code></pre></div></div>
+
+<p>Once those are safely tucked into a folder we are ready to call</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>bundle <span class="nb">install</span>
+</code></pre></div></div>
+<p>to install whatever our gemfile says.
+Then all that is left to do to view the site locally is to call</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>jekyll s 
+</code></pre></div></div>
+<p>In case this complains about the versions installed on your system try with</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>bundle <span class="nb">exec </span>jekyll s <span class="nt">--trace</span>
+</code></pre></div></div>
+
+</div>
+</main>
+
+</html>
