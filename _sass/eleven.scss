@@ -24,12 +24,10 @@ li { margin: 0.15em 0; }
 
 h1 {
     font-size: 1.3em;
-    margin: 0.36em 0;
 }
 
 h2 {
     font-size: 1.1em;
-    margin: 0.35em 0;
 }
 
 @for $i from 3 through 6 {
@@ -37,7 +35,6 @@ h2 {
     //font-size: $base-font-size + $heading-scale * (6 - $i) * (6 - $i);
     font-size: 1em;
     text-decoration: underline;
-    margin: 0.3em + 0.01em * (6 - $i) 0;
     font-weight: normal;
   }
 }
