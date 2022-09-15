@@ -8,19 +8,19 @@ layout: default
         {{ content }}
     <div style="clear: both;"></div> 
     </div>
-
-    {% for page in site.pages %}
+    {% assign sorted_pages = site.pages | sort:"order" %}
+    {% for page in sorted_pages %}
     {% if page.layout == 'block' %}
     {% unless page.content contains site.excerpt_separator %}
     <div class="box">
-        <h3>{{ page.title }}</h3>
+        <h1>{{ page.title }}</h1>
         {{ page.content | markdownify }}
     </div>
     {% endunless %}
     {% endif %}
     {% if page.layout == 'block' and page.content contains site.excerpt_separator %}
     <div class="box">
-        <h3>{{ page.title }}</h3>
+        <h1>{{ page.title }}</h1>
         {{ page.excerpt }}
         <p><a href="{{ page.url | relative_url }}">Read more</a></p>
     </div>
@@ -31,9 +31,9 @@ layout: default
     {% unless collection.label == 'posts' %}
         <div class="box">
             {% if collection.title %}
-            <h3>{{ collection.title }}</h3>
+            <h1>{{ collection.title }}</h1>
             {% else %}
-            <h3>{{ collection.label }}</h3>
+            <h1>{{ collection.label }}</h1>
             {% endif %}
             <ul>
             {% for entry in site[collection.label] %}
@@ -46,7 +46,7 @@ layout: default
 
     {%- assign date_format = site.eleven.date_format | default: "%b %d, %Y" -%}
     <div class="box">
-        <h3>Posts</h3>
+        <h1>Posts</h1>
         <ul>
             {% for post in site.posts %}
             <li>{{ post.date | date: date_format }} - <a href="{{ post.url  | relative_url }}">{{ post.title }}</a></li>
