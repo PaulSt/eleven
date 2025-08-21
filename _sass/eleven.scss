@@ -1,3 +1,4 @@
+@use 'sass:color';
 html, body { background: white; }
 
 body {
@@ -108,7 +109,7 @@ iframe {
 }
 
 $link-color: #4478A6;
-$hover-color: darken($link-color, 20%);
+$hover-color: color.adjust($link-color, $lightness: -20%);
 a{
     color: $link-color;
     text-decoration: none;
